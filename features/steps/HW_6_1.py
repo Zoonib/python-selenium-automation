@@ -11,7 +11,7 @@ SIGNIN_BTN = (By.CSS_SELECTOR, '#nav-signin-tooltip .nav-action-signin-button')
 
 
 @given('Open Amazon page')
-@ def click_orders(context):
+@@ -23,6 +26,14 @@ def click_orders(context):
     context.driver.find_element(*ORDERS_BTN).click()
 
 

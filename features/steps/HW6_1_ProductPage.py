@@ -28,7 +28,7 @@ def get_product_name(context):
 
 @then('Verify user can click through colors')
 def verify_can_click_colors(context):
-    expected_colors = ['Black', 'Blue Over Dye', 'Dark Blue Vintage', 'Dark Indigo', 'Dark Wash', 'Indigo wash', 'light wash', 'Medium Blue Vintage' 'Medium Wash', 'Rinsed', 'Vitage Wash', 'Washed Black' , 'Bright white', 'Dark Khaki Brown', 'Light Khaki Brown', 'Olive' , 'Light Blue Vintage' , 'Washed Grey', 'Sage Green' '] # 0, 1, 2, 3, 4
+    expected_colors = ['Army Green', 'Black', 'Blue', 'Brown'] # 0, 1, 2, 3
     actual_colors = []
 
     colors = context.driver.find_elements(*COLOR_OPTIONS)
