@@ -1,14 +1,10 @@
 from behave import given, when, then
 from selenium.webdriver.common.by import By
 
-from behave import given, when, then
-from selenium.webdriver.common.by import By
-
-def open_amazon(context):
-    context.driver.get('https://www.amazon.com')
-
+Header_Link = (By.CSS_SELECTOR, "a[href*='zg_bs_tab']") # Header_Link has been defined.
 @given('Open amazon')
-
+def amazon_main_page(context):
+    context.driver.get('https://www.amazon.com')
 
 @when('Click on Best Seller')
 def click_best_Seller(context):
