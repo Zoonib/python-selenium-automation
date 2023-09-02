@@ -15,3 +15,11 @@ def click_cart(context):
 @then('Verify Sign in text is {expected_result}')
 def verify_cart_empty(context, expected_result):
     context.app.sign_in_page.verify_signin_opened(expected_result)
+
+@when('Click on shopping cart icon')
+def click_on_shopping_cart_icon(context):
+    context.app.shopping_cart.click_cart()
+
+@then('Verify cart result is {result}')
+def verify_cart_result(context, result):
+    context.app.shopping_cart.verify_empty_cart(result)
