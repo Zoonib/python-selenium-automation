@@ -12,12 +12,12 @@ class Page:
         self.driver.find_element(*locator).click()
 
     def find_element(self, *locator):
-        logger.info(f'Searching for {locator}')
+       # logger.info(f'Searching for {locator}')
         return self.driver.find_element(*locator)
 
     def input_text(self, text: str, *locator):
         e = self.find_element(*locator)
-        logger.info(f'Inputting text: "{text}"')
+       # logger.info(f'Inputting text: "{text}"')
         e.send_keys(text)
 
     def find_elements(self, *locator):

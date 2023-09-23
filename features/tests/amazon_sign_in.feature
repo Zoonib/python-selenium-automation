@@ -18,3 +18,9 @@ Scenario: User can open and close Amazon Privacy Notice
     Then Verify Amazon Privacy Notice page is opened
     And User can close new window
     And Switch back to original
+
+Scenario: User can select and search in a department
+    Given Open Amazon page
+    When Select Cell phones & Accessories
+    And Search for iphone
+    Then Verify Cell phones department selected
