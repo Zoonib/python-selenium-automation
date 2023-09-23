@@ -8,7 +8,7 @@ class Page:
         self.wait = WebDriverWait(self.driver, 10)
 
     def click(self, *locator):
-        logger.info(f'Clicking on {locator}')
+        #logger.info(f'Clicking on {locator}')
         self.driver.find_element(*locator).click()
 
     def find_element(self, *locator):

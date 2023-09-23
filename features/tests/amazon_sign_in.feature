@@ -10,8 +10,7 @@ Scenario: Verify that a user can click on shopping cart
     When Click on shopping cart icon
     Then Verify cart result is Your Amazon Cart is empty
 
-
-    Scenario: User can open and close Amazon Privacy Notice
+Scenario: User can open and close Amazon Privacy Notice
     Given Open Amazon T&C page
     When Store original windows
     And Click on Amazon Privacy Notice
